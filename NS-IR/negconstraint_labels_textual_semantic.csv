@@ -1,0 +1,367 @@
+_id,formulation,method
+0,A - a,textual_semantic_reading
+1,A - a,textual_semantic_reading
+2,A - a,textual_semantic_reading
+3,(A - a) ∪ B,textual_semantic_reading
+4,A - a,textual_semantic_reading
+5,(A - a) ∪ B,textual_semantic_reading
+6,(A - a) ∪ B,textual_semantic_reading
+7,A - a,textual_semantic_reading
+8,A - a,textual_semantic_reading
+9,A - a,textual_semantic_reading
+10,A - a,textual_semantic_reading
+11,(A - a) ∪ B,textual_semantic_reading
+12,A - a,textual_semantic_reading
+13,A - a,textual_semantic_reading
+14,A - a,textual_semantic_reading
+15,A - a,textual_semantic_reading
+16,(A - a) ∪ B,textual_semantic_reading
+17,A - a,textual_semantic_reading
+18,(A - a) ∪ B,textual_semantic_reading
+19,(A - a) ∪ B,textual_semantic_reading
+20,(A - a) ∪ B,textual_semantic_reading
+21,A - a,textual_semantic_reading
+22,A - a,textual_semantic_reading
+23,(A - a) ∪ B,textual_semantic_reading
+24,(A - a) ∪ B,textual_semantic_reading
+25,(A - a) ∪ B,textual_semantic_reading
+26,(A - a) ∪ B,textual_semantic_reading
+27,(A - a) ∪ B,textual_semantic_reading
+28,A - a,textual_semantic_reading
+29,(A - a) ∪ B,textual_semantic_reading
+30,(A - a) ∪ B,textual_semantic_reading
+31,A - a,textual_semantic_reading
+32,(A - a) ∪ B,textual_semantic_reading
+33,A - a,textual_semantic_reading
+34,A - a,textual_semantic_reading
+35,A - a,textual_semantic_reading
+36,A - a,textual_semantic_reading
+37,A - a,textual_semantic_reading
+38,A - a,textual_semantic_reading
+39,A - a,textual_semantic_reading
+40,A - a,textual_semantic_reading
+41,A - a,textual_semantic_reading
+42,A - a,textual_semantic_reading
+43,A - a,textual_semantic_reading
+44,(A - a) ∪ B,textual_semantic_reading
+45,A - a,textual_semantic_reading
+46,A - a,textual_semantic_reading
+47,A - a,textual_semantic_reading
+48,A - a,textual_semantic_reading
+49,A - a,textual_semantic_reading
+50,A - a,textual_semantic_reading
+51,(A - a) ∪ B,textual_semantic_reading
+52,(A - a) ∪ B,textual_semantic_reading
+53,(A - a) ∪ B,textual_semantic_reading
+54,A - a,textual_semantic_reading
+55,(A - a) ∪ B,textual_semantic_reading
+56,A - a,textual_semantic_reading
+57,(A - a) ∪ B,textual_semantic_reading
+58,(A - a) ∪ B,textual_semantic_reading
+59,(A - a) ∪ B,textual_semantic_reading
+60,(A - a) ∪ B,textual_semantic_reading
+61,(A - a) ∪ B,textual_semantic_reading
+62,A - a,textual_semantic_reading
+63,(A - a) ∪ B,textual_semantic_reading
+64,(A - a) ∪ B,textual_semantic_reading
+65,A - a,textual_semantic_reading
+66,A - a,textual_semantic_reading
+67,(A - a) ∪ B,textual_semantic_reading
+68,(A - a) ∪ B,textual_semantic_reading
+69,(A - a) ∪ B,textual_semantic_reading
+70,A - a,textual_semantic_reading
+71,(A - a) ∪ B,textual_semantic_reading
+72,A - a,textual_semantic_reading
+73,(A - a) ∪ B,textual_semantic_reading
+74,A - a,textual_semantic_reading
+75,A - a,textual_semantic_reading
+76,A - a,textual_semantic_reading
+77,A - a,textual_semantic_reading
+78,A - a,textual_semantic_reading
+79,(A - a) ∪ B,textual_semantic_reading
+80,(A - a) ∪ B,textual_semantic_reading
+81,(A - a) ∪ B,textual_semantic_reading
+82,(A - a) ∪ B,textual_semantic_reading
+83,(A - a) ∪ B,textual_semantic_reading
+84,(A - a) ∪ B,textual_semantic_reading
+85,(A - a) ∪ B,textual_semantic_reading
+86,(A - a) ∪ B,textual_semantic_reading
+87,A - a,textual_semantic_reading
+88,(A - a) ∪ B,textual_semantic_reading
+89,(A - a) ∪ B,textual_semantic_reading
+90,(A - a) ∪ B,textual_semantic_reading
+91,(A - a) ∪ B,textual_semantic_reading
+92,A - a,textual_semantic_reading
+93,(A - a) ∪ B,textual_semantic_reading
+94,(A - a) ∪ B,textual_semantic_reading
+95,A - a,textual_semantic_reading
+96,(A - a) ∪ B,textual_semantic_reading
+97,(A - a) ∪ B,textual_semantic_reading
+98,(A - a) ∪ B,textual_semantic_reading
+99,A - a,textual_semantic_reading
+100,(A - a) ∪ B,textual_semantic_reading
+101,(A - a) ∪ B,textual_semantic_reading
+102,A - a,textual_semantic_reading
+103,(A - a) ∪ B,textual_semantic_reading
+104,A - a,textual_semantic_reading
+105,(A - a) ∪ B,textual_semantic_reading
+106,(A - a) ∪ B,textual_semantic_reading
+107,(A - a) ∪ B,textual_semantic_reading
+108,(A - a) ∪ B,textual_semantic_reading
+109,(A - a) ∪ B,textual_semantic_reading
+110,A - a,textual_semantic_reading
+111,(A - a) ∪ B,textual_semantic_reading
+112,(A - a) ∪ B,textual_semantic_reading
+113,(A - a) ∪ B,textual_semantic_reading
+114,(A - a) ∪ B,textual_semantic_reading
+115,(A - a) ∪ B,textual_semantic_reading
+116,(A - a) ∪ B,textual_semantic_reading
+117,A - a,textual_semantic_reading
+118,(A - a) ∪ B,textual_semantic_reading
+119,(A - a) ∪ B,textual_semantic_reading
+120,(A - a) ∪ B,textual_semantic_reading
+121,(A - a) ∪ B,textual_semantic_reading
+122,(A - a) ∪ B,textual_semantic_reading
+123,(A - a) ∪ B,textual_semantic_reading
+124,(A - a) ∪ B,textual_semantic_reading
+125,(A - a) ∪ B,textual_semantic_reading
+126,(A - a) ∪ B,textual_semantic_reading
+127,A - a,textual_semantic_reading
+128,(A - a) ∪ B,textual_semantic_reading
+129,(A - a) ∪ B,textual_semantic_reading
+130,(A - a) ∪ B,textual_semantic_reading
+131,(A - a) ∪ B,textual_semantic_reading
+132,(A - a) ∪ B,textual_semantic_reading
+133,(A - a) ∪ B,textual_semantic_reading
+134,(A - a) ∪ B,textual_semantic_reading
+135,(A - a) ∪ B,textual_semantic_reading
+136,A - a,textual_semantic_reading
+137,(A - a) ∪ B,textual_semantic_reading
+138,(A - a) ∪ B,textual_semantic_reading
+139,(A - a) ∪ B,textual_semantic_reading
+140,(A - a) ∪ B,textual_semantic_reading
+141,A - a,textual_semantic_reading
+142,(A - a) ∪ B,textual_semantic_reading
+143,(A - a) ∪ B,textual_semantic_reading
+144,(A - a) ∪ B,textual_semantic_reading
+145,A - a,textual_semantic_reading
+146,A - a,textual_semantic_reading
+147,(A - a) ∪ B,textual_semantic_reading
+148,(A - a) ∪ (B - b),textual_semantic_reading
+149,(A - a) ∪ (B - b),textual_semantic_reading
+150,(A - a) ∪ (B - b),textual_semantic_reading
+151,(A - a) ∪ (B - b),textual_semantic_reading
+152,(A - a) ∪ (B - b),textual_semantic_reading
+153,(A - a) ∪ (B - b),textual_semantic_reading
+154,A - a,textual_semantic_reading
+155,(A - a) ∪ (B - b),textual_semantic_reading
+156,(A - a) ∪ (B - b),textual_semantic_reading
+157,(A - a) ∪ (B - b),textual_semantic_reading
+158,(A - a) ∪ (B - b),textual_semantic_reading
+159,(A - a) ∪ (B - b),textual_semantic_reading
+160,(A - a) ∪ (B - b),textual_semantic_reading
+161,A - a,textual_semantic_reading
+162,A - a,textual_semantic_reading
+163,A - a,textual_semantic_reading
+164,(A - a) ∪ (B - b),textual_semantic_reading
+165,(A - a) ∪ (B - b),textual_semantic_reading
+166,(A - a) ∪ (B - b),textual_semantic_reading
+167,A - a,textual_semantic_reading
+168,(A - a) ∪ (B - b),textual_semantic_reading
+169,(A - a) ∪ (B - b),textual_semantic_reading
+170,(A - a) ∪ (B - b),textual_semantic_reading
+171,(A - a) ∪ (B - b),textual_semantic_reading
+172,A - a,textual_semantic_reading
+173,(A - a) ∪ (B - b),textual_semantic_reading
+174,(A - a) ∪ (B - b),textual_semantic_reading
+175,(A - a) ∪ (B - b),textual_semantic_reading
+176,(A - a) ∪ (B - b),textual_semantic_reading
+177,(A - a) ∪ (B - b),textual_semantic_reading
+178,(A - a) ∪ (B - b),textual_semantic_reading
+179,(A - a) ∪ (B - b),textual_semantic_reading
+180,(A - a) ∪ (B - b),textual_semantic_reading
+181,A - a,textual_semantic_reading
+182,(A - a) ∪ (B - b),textual_semantic_reading
+183,(A - a) ∪ (B - b),textual_semantic_reading
+184,(A - a) ∪ (B - b),textual_semantic_reading
+185,(A - a) ∪ (B - b),textual_semantic_reading
+186,(A - a) ∪ (B - b),textual_semantic_reading
+187,(A - a) ∪ (B - b),textual_semantic_reading
+188,(A - a) ∪ (B - b),textual_semantic_reading
+189,(A - a) ∪ (B - b),textual_semantic_reading
+190,(A - a) ∪ (B - b),textual_semantic_reading
+191,A - a,textual_semantic_reading
+192,(A - a) ∪ (B - b),textual_semantic_reading
+193,(A - a) ∪ (B - b),textual_semantic_reading
+194,(A - a) ∪ (B - b),textual_semantic_reading
+195,(A - a) ∪ (B - b),textual_semantic_reading
+196,(A - a) ∪ (B - b),textual_semantic_reading
+197,(A - a) ∪ (B - b),textual_semantic_reading
+198,(A - a) ∪ (B - b),textual_semantic_reading
+199,(A - a) ∪ (B - b),textual_semantic_reading
+200,(A - a) ∪ (B - b),textual_semantic_reading
+201,A - a,textual_semantic_reading
+202,(A - a) ∪ (B - b),textual_semantic_reading
+203,(A - a) ∪ (B - b),textual_semantic_reading
+204,(A - a) ∪ (B - b),textual_semantic_reading
+205,(A - a) ∪ (B - b),textual_semantic_reading
+206,(A - a) ∪ (B - b),textual_semantic_reading
+207,(A - a) ∪ (B - b),textual_semantic_reading
+208,(A - a) ∪ (B - b),textual_semantic_reading
+209,(A - a) ∪ (B - b),textual_semantic_reading
+210,A - a,textual_semantic_reading
+211,(A - a) ∪ (B - b),textual_semantic_reading
+212,(A - a) ∪ (B - b),textual_semantic_reading
+213,(A - a) ∪ (B - b),textual_semantic_reading
+214,(A - a) ∪ (B - b),textual_semantic_reading
+215,(A - a) ∪ (B - b),textual_semantic_reading
+216,(A - a) ∪ (B - b),textual_semantic_reading
+217,(A - a) ∪ (B - b),textual_semantic_reading
+218,(A - a) ∪ (B - b),textual_semantic_reading
+219,(A - a) ∪ (B - b),textual_semantic_reading
+220,(A - a) ∪ (B - b),textual_semantic_reading
+221,(A - a) ∪ (B - b),textual_semantic_reading
+222,(A - a) ∪ (B - b),textual_semantic_reading
+223,(A - a) ∪ (B - b),textual_semantic_reading
+224,(A - a) ∪ (B - b),textual_semantic_reading
+225,(A - a) ∪ (B - b),textual_semantic_reading
+226,(A - a) ∪ (B - b),textual_semantic_reading
+227,(A - a) ∪ (B - b),textual_semantic_reading
+228,A - a,textual_semantic_reading
+229,A - a,textual_semantic_reading
+230,(A - a) ∪ (B - b),textual_semantic_reading
+231,(A - a) ∪ (B - b),textual_semantic_reading
+232,(A - a) ∪ (B - b),textual_semantic_reading
+233,(A - a) ∪ (B - b),textual_semantic_reading
+234,(A - a) ∪ (B - b),textual_semantic_reading
+235,(A - a) ∪ (B - b),textual_semantic_reading
+236,A - a,textual_semantic_reading
+237,(A - a) ∪ (B - b),textual_semantic_reading
+238,(A - a) ∪ (B - b),textual_semantic_reading
+239,(A - a) ∪ (B - b),textual_semantic_reading
+240,(A - a) ∪ (B - b),textual_semantic_reading
+241,(A - a) ∪ (B - b),textual_semantic_reading
+242,(A - a) ∪ (B - b),textual_semantic_reading
+243,(A - a) ∪ (B - b),textual_semantic_reading
+244,(A - a) ∪ (B - b),textual_semantic_reading
+245,(A - a) ∪ (B - b),textual_semantic_reading
+246,A - a,textual_semantic_reading
+247,(A - a) ∪ (B - b),textual_semantic_reading
+248,(A - a) ∪ (B - b),textual_semantic_reading
+249,(A - a) ∪ (B - b),textual_semantic_reading
+250,(A - a) ∪ (B - b),textual_semantic_reading
+251,(A - a) ∪ (B - b),textual_semantic_reading
+252,(A - a) ∪ (B - b),textual_semantic_reading
+253,(A - a) ∪ (B - b),textual_semantic_reading
+254,(A - a) ∪ (B - b),textual_semantic_reading
+255,(A - a) ∪ (B - b),textual_semantic_reading
+256,A - a,textual_semantic_reading
+257,(A - a) ∪ (B - b),textual_semantic_reading
+258,(A - a) ∪ (B - b),textual_semantic_reading
+259,(A - a) ∪ (B - b),textual_semantic_reading
+260,(A - a) ∪ (B - b),textual_semantic_reading
+261,(A - a) ∪ (B - b),textual_semantic_reading
+262,(A - a) ∪ (B - b),textual_semantic_reading
+263,(A - a) ∪ (B - b),textual_semantic_reading
+264,(A - a) ∪ (B - b),textual_semantic_reading
+265,A - a,textual_semantic_reading
+266,(A - a) ∪ (B - b),textual_semantic_reading
+267,(A - a) ∪ (B - b),textual_semantic_reading
+268,(A - a) ∪ (B - b),textual_semantic_reading
+269,(A - a) ∪ (B - b),textual_semantic_reading
+270,(A - a) ∪ (B - b),textual_semantic_reading
+271,(A - a) ∪ (B - b),textual_semantic_reading
+272,(A - a) ∪ (B - b),textual_semantic_reading
+273,A - a,textual_semantic_reading
+274,(A - a) ∪ (B - b),textual_semantic_reading
+275,(A - a) ∪ (B - b),textual_semantic_reading
+276,(A - a) ∪ (B - b),textual_semantic_reading
+277,(A - a) ∪ (B - b),textual_semantic_reading
+278,(A - a) ∪ (B - b),textual_semantic_reading
+279,(A - a) ∪ (B - b),textual_semantic_reading
+280,(A - a) ∪ (B - b),textual_semantic_reading
+281,A - a,textual_semantic_reading
+282,(A - a) ∪ (B - b),textual_semantic_reading
+283,(A - a) ∪ (B - b),textual_semantic_reading
+284,(A - a) ∪ (B - b),textual_semantic_reading
+285,(A - a) ∪ (B - b),textual_semantic_reading
+286,(A - a) ∪ (B - b),textual_semantic_reading
+287,(A - a) ∪ (B - b),textual_semantic_reading
+288,(A - a) ∪ (B - b),textual_semantic_reading
+289,(A - a) ∪ (B - b),textual_semantic_reading
+290,A - a,textual_semantic_reading
+291,(A - a) ∪ (B - b),textual_semantic_reading
+292,(A - a) ∪ (B - b),textual_semantic_reading
+293,(A - a) ∪ B,textual_semantic_reading
+294,(A - a) ∪ (B - b),textual_semantic_reading
+295,A - a,textual_semantic_reading
+296,(A - a) ∪ (B - b),textual_semantic_reading
+297,(A - a) ∪ (B - b),textual_semantic_reading
+298,(A - a) ∪ (B - b),textual_semantic_reading
+299,(A - a) ∪ (B - b),textual_semantic_reading
+300,(A - a) ∪ (B - b),textual_semantic_reading
+301,(A - a) ∪ (B - b),textual_semantic_reading
+302,(A - a) ∪ (B - b),textual_semantic_reading
+303,(A - a) ∪ (B - b),textual_semantic_reading
+304,(A - a) ∪ (B - b),textual_semantic_reading
+305,A - a,textual_semantic_reading
+306,(A - a) ∪ (B - b),textual_semantic_reading
+307,(A - a) ∪ (B - b),textual_semantic_reading
+308,(A - a) ∪ (B - b),textual_semantic_reading
+309,(A - a) ∪ (B - b),textual_semantic_reading
+310,(A - a) ∪ (B - b),textual_semantic_reading
+311,(A - a) ∪ (B - b),textual_semantic_reading
+312,(A - a) ∪ (B - b),textual_semantic_reading
+313,(A - a) ∪ (B - b),textual_semantic_reading
+314,A - a,textual_semantic_reading
+315,A - a,textual_semantic_reading
+316,A - a,textual_semantic_reading
+317,A - a,textual_semantic_reading
+318,A - a,textual_semantic_reading
+319,A - a,textual_semantic_reading
+320,A - a,textual_semantic_reading
+321,A - a,textual_semantic_reading
+322,A - a,textual_semantic_reading
+323,A - a,textual_semantic_reading
+324,A - a,textual_semantic_reading
+325,A - a,textual_semantic_reading
+326,A - a,textual_semantic_reading
+327,A - a,textual_semantic_reading
+328,A - a,textual_semantic_reading
+329,A - a,textual_semantic_reading
+330,A - a,textual_semantic_reading
+331,A - a,textual_semantic_reading
+332,A - a,textual_semantic_reading
+333,A - a,textual_semantic_reading
+334,A - a,textual_semantic_reading
+335,A - a,textual_semantic_reading
+336,A - a,textual_semantic_reading
+337,A - a,textual_semantic_reading
+338,A - a,textual_semantic_reading
+339,A - a,textual_semantic_reading
+340,A - a,textual_semantic_reading
+341,A - a,textual_semantic_reading
+342,A - a,textual_semantic_reading
+343,A - a,textual_semantic_reading
+344,A - a,textual_semantic_reading
+345,A - a,textual_semantic_reading
+346,A - a,textual_semantic_reading
+347,A - a,textual_semantic_reading
+348,A - a,textual_semantic_reading
+349,A - a,textual_semantic_reading
+350,A - a,textual_semantic_reading
+351,A - a,textual_semantic_reading
+352,A - a,textual_semantic_reading
+353,A - a,textual_semantic_reading
+354,A - a,textual_semantic_reading
+355,A - a,textual_semantic_reading
+356,A - a,textual_semantic_reading
+357,A - a,textual_semantic_reading
+358,A - a,textual_semantic_reading
+359,A - a,textual_semantic_reading
+360,A - a,textual_semantic_reading
+361,A - a,textual_semantic_reading
+362,A - a,textual_semantic_reading
+363,A - a,textual_semantic_reading
+364,A - a,textual_semantic_reading
+365,A - a,textual_semantic_reading

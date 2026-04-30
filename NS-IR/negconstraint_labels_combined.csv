@@ -1,0 +1,367 @@
+_id,textual_semantic_formulation,paper_count_aligned_best_fit_formulation
+0,A - a,A - a
+1,A - a,A - a
+2,A - a,A - a
+3,(A - a) ∪ B,A - a
+4,A - a,A - a
+5,(A - a) ∪ B,A - a
+6,(A - a) ∪ B,A - a
+7,A - a,A - a
+8,A - a,A - a
+9,A - a,A - a
+10,A - a,A - a
+11,(A - a) ∪ B,A - a
+12,A - a,A - a
+13,A - a,A - a
+14,A - a,A - a
+15,A - a,A - a
+16,(A - a) ∪ B,(A - a) ∪ B
+17,A - a,A - a
+18,(A - a) ∪ B,(A - a) ∪ B
+19,(A - a) ∪ B,(A - a) ∪ B
+20,(A - a) ∪ B,(A - a) ∪ B
+21,A - a,A - a
+22,A - a,A - a
+23,(A - a) ∪ B,(A - a) ∪ B
+24,(A - a) ∪ B,(A - a) ∪ B
+25,(A - a) ∪ B,(A - a) ∪ B
+26,(A - a) ∪ B,(A - a) ∪ B
+27,(A - a) ∪ B,(A - a) ∪ B
+28,A - a,A - a
+29,(A - a) ∪ B,(A - a) ∪ B
+30,(A - a) ∪ B,(A - a) ∪ B
+31,A - a,A - a
+32,(A - a) ∪ B,(A - a) ∪ B
+33,A - a,A - a
+34,A - a,A - a
+35,A - a,A - a
+36,A - a,A - a
+37,A - a,A - a
+38,A - a,A - a
+39,A - a,A - a
+40,A - a,A - a
+41,A - a,A - a
+42,A - a,A - a
+43,A - a,A - a
+44,(A - a) ∪ B,(A - a) ∪ B
+45,A - a,A - a
+46,A - a,A - a
+47,A - a,A - a
+48,A - a,A - a
+49,A - a,A - a
+50,A - a,A - a
+51,(A - a) ∪ B,(A - a) ∪ B
+52,(A - a) ∪ B,(A - a) ∪ B
+53,(A - a) ∪ B,(A - a) ∪ B
+54,A - a,A - a
+55,(A - a) ∪ B,A - a
+56,A - a,A - a
+57,(A - a) ∪ B,(A - a) ∪ B
+58,(A - a) ∪ B,(A - a) ∪ B
+59,(A - a) ∪ B,(A - a) ∪ B
+60,(A - a) ∪ B,(A - a) ∪ B
+61,(A - a) ∪ B,(A - a) ∪ B
+62,A - a,A - a
+63,(A - a) ∪ B,(A - a) ∪ B
+64,(A - a) ∪ B,(A - a) ∪ B
+65,A - a,A - a
+66,A - a,A - a
+67,(A - a) ∪ B,(A - a) ∪ B
+68,(A - a) ∪ B,(A - a) ∪ B
+69,(A - a) ∪ B,A - a
+70,A - a,A - a
+71,(A - a) ∪ B,(A - a) ∪ B
+72,A - a,A - a
+73,(A - a) ∪ B,(A - a) ∪ B
+74,A - a,A - a
+75,A - a,A - a
+76,A - a,A - a
+77,A - a,A - a
+78,A - a,A - a
+79,(A - a) ∪ B,(A - a) ∪ B
+80,(A - a) ∪ B,(A - a) ∪ B
+81,(A - a) ∪ B,(A - a) ∪ B
+82,(A - a) ∪ B,(A - a) ∪ B
+83,(A - a) ∪ B,(A - a) ∪ B
+84,(A - a) ∪ B,(A - a) ∪ B
+85,(A - a) ∪ B,(A - a) ∪ B
+86,(A - a) ∪ B,(A - a) ∪ B
+87,A - a,A - a
+88,(A - a) ∪ B,(A - a) ∪ B
+89,(A - a) ∪ B,(A - a) ∪ B
+90,(A - a) ∪ B,(A - a) ∪ B
+91,(A - a) ∪ B,(A - a) ∪ B
+92,A - a,A - a
+93,(A - a) ∪ B,(A - a) ∪ B
+94,(A - a) ∪ B,(A - a) ∪ B
+95,A - a,A - a
+96,(A - a) ∪ B,(A - a) ∪ B
+97,(A - a) ∪ B,(A - a) ∪ B
+98,(A - a) ∪ B,(A - a) ∪ B
+99,A - a,A - a
+100,(A - a) ∪ B,(A - a) ∪ B
+101,(A - a) ∪ B,(A - a) ∪ B
+102,A - a,A - a
+103,(A - a) ∪ B,(A - a) ∪ B
+104,A - a,A - a
+105,(A - a) ∪ B,(A - a) ∪ B
+106,(A - a) ∪ B,(A - a) ∪ B
+107,(A - a) ∪ B,(A - a) ∪ B
+108,(A - a) ∪ B,(A - a) ∪ B
+109,(A - a) ∪ B,(A - a) ∪ B
+110,A - a,A - a
+111,(A - a) ∪ B,(A - a) ∪ B
+112,(A - a) ∪ B,(A - a) ∪ B
+113,(A - a) ∪ B,(A - a) ∪ B
+114,(A - a) ∪ B,(A - a) ∪ B
+115,(A - a) ∪ B,(A - a) ∪ B
+116,(A - a) ∪ B,(A - a) ∪ B
+117,A - a,A - a
+118,(A - a) ∪ B,(A - a) ∪ B
+119,(A - a) ∪ B,(A - a) ∪ B
+120,(A - a) ∪ B,(A - a) ∪ B
+121,(A - a) ∪ B,(A - a) ∪ B
+122,(A - a) ∪ B,(A - a) ∪ B
+123,(A - a) ∪ B,(A - a) ∪ B
+124,(A - a) ∪ B,(A - a) ∪ B
+125,(A - a) ∪ B,(A - a) ∪ B
+126,(A - a) ∪ B,(A - a) ∪ B
+127,A - a,A - a
+128,(A - a) ∪ B,(A - a) ∪ B
+129,(A - a) ∪ B,(A - a) ∪ B
+130,(A - a) ∪ B,(A - a) ∪ B
+131,(A - a) ∪ B,(A - a) ∪ B
+132,(A - a) ∪ B,(A - a) ∪ B
+133,(A - a) ∪ B,(A - a) ∪ B
+134,(A - a) ∪ B,(A - a) ∪ B
+135,(A - a) ∪ B,(A - a) ∪ B
+136,A - a,A - a
+137,(A - a) ∪ B,(A - a) ∪ B
+138,(A - a) ∪ B,(A - a) ∪ B
+139,(A - a) ∪ B,(A - a) ∪ B
+140,(A - a) ∪ B,(A - a) ∪ B
+141,A - a,A - a
+142,(A - a) ∪ B,(A - a) ∪ B
+143,(A - a) ∪ B,(A - a) ∪ B
+144,(A - a) ∪ B,(A - a) ∪ B
+145,A - a,A - a
+146,A - a,A - a
+147,(A - a) ∪ B,(A - a) ∪ B
+148,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+149,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+150,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+151,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+152,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+153,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+154,A - a,A - a
+155,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+156,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+157,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+158,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+159,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+160,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+161,A - a,(A - a) ∪ (B - b)
+162,A - a,(A - a) ∪ (B - b)
+163,A - a,A - a
+164,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+165,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+166,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+167,A - a,A - a
+168,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+169,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+170,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+171,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+172,A - a,A - a
+173,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+174,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+175,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+176,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+177,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+178,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+179,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+180,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+181,A - a,A - a
+182,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+183,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+184,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+185,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+186,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+187,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+188,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+189,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+190,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+191,A - a,A - a
+192,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+193,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+194,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+195,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+196,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+197,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+198,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+199,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+200,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+201,A - a,A - a
+202,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+203,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+204,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+205,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+206,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+207,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+208,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+209,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+210,A - a,A - a
+211,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+212,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+213,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+214,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+215,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+216,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+217,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+218,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+219,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+220,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+221,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+222,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+223,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+224,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+225,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+226,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+227,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+228,A - a,A - a
+229,A - a,A - a
+230,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+231,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+232,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+233,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+234,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+235,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+236,A - a,A - a
+237,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+238,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+239,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+240,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+241,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+242,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+243,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+244,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+245,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+246,A - a,A - a
+247,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+248,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+249,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+250,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+251,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+252,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+253,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+254,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+255,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+256,A - a,A - a
+257,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+258,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+259,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+260,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+261,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+262,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+263,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+264,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+265,A - a,A - a
+266,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+267,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+268,(A - a) ∪ (B - b),(A - a) ∪ (B - b)
+269,(A - a) ∪ (B - b),(A - a) ∪ B
+270,(A - a) ∪ (B - b),(A - a) ∪ B
+271,(A - a) ∪ (B - b),(A - a) ∪ B
+272,(A - a) ∪ (B - b),(A - a) ∪ B
+273,A - a,A - a
+274,(A - a) ∪ (B - b),(A - a) ∪ B
+275,(A - a) ∪ (B - b),(A - a) ∪ B
+276,(A - a) ∪ (B - b),(A - a) ∪ B
+277,(A - a) ∪ (B - b),(A - a) ∪ B
+278,(A - a) ∪ (B - b),(A - a) ∪ B
+279,(A - a) ∪ (B - b),(A - a) ∪ B
+280,(A - a) ∪ (B - b),(A - a) ∪ B
+281,A - a,A - a
+282,(A - a) ∪ (B - b),(A - a) ∪ B
+283,(A - a) ∪ (B - b),(A - a) ∪ B
+284,(A - a) ∪ (B - b),(A - a) ∪ B
+285,(A - a) ∪ (B - b),(A - a) ∪ B
+286,(A - a) ∪ (B - b),(A - a) ∪ B
+287,(A - a) ∪ (B - b),(A - a) ∪ B
+288,(A - a) ∪ (B - b),(A - a) ∪ B
+289,(A - a) ∪ (B - b),(A - a) ∪ B
+290,A - a,A - a
+291,(A - a) ∪ (B - b),(A - a) ∪ B
+292,(A - a) ∪ (B - b),(A - a) ∪ B
+293,(A - a) ∪ B,(A - a) ∪ B
+294,(A - a) ∪ (B - b),(A - a) ∪ B
+295,A - a,A - a
+296,(A - a) ∪ (B - b),(A - a) ∪ B
+297,(A - a) ∪ (B - b),(A - a) ∪ B
+298,(A - a) ∪ (B - b),(A - a) ∪ B
+299,(A - a) ∪ (B - b),(A - a) ∪ B
+300,(A - a) ∪ (B - b),(A - a) ∪ B
+301,(A - a) ∪ (B - b),(A - a) ∪ B
+302,(A - a) ∪ (B - b),(A - a) ∪ B
+303,(A - a) ∪ (B - b),(A - a) ∪ B
+304,(A - a) ∪ (B - b),(A - a) ∪ B
+305,A - a,A - a
+306,(A - a) ∪ (B - b),(A - a) ∪ B
+307,(A - a) ∪ (B - b),(A - a) ∪ B
+308,(A - a) ∪ (B - b),(A - a) ∪ B
+309,(A - a) ∪ (B - b),(A - a) ∪ B
+310,(A - a) ∪ (B - b),(A - a) ∪ B
+311,(A - a) ∪ (B - b),(A - a) ∪ B
+312,(A - a) ∪ (B - b),(A - a) ∪ B
+313,(A - a) ∪ (B - b),(A - a) ∪ B
+314,A - a,A - a
+315,A - a,A - a
+316,A - a,A - a
+317,A - a,A - a
+318,A - a,A - a
+319,A - a,A - a
+320,A - a,A - a
+321,A - a,A - a
+322,A - a,A - a
+323,A - a,A - a
+324,A - a,A - a
+325,A - a,A - a
+326,A - a,A - a
+327,A - a,A - a
+328,A - a,A - a
+329,A - a,A - a
+330,A - a,A - a
+331,A - a,A - a
+332,A - a,A - a
+333,A - a,A - a
+334,A - a,A - a
+335,A - a,A - a
+336,A - a,A - a
+337,A - a,A - a
+338,A - a,A - a
+339,A - a,A - a
+340,A - a,A - a
+341,A - a,A - a
+342,A - a,A - a
+343,A - a,A - a
+344,A - a,A - a
+345,A - a,A - a
+346,A - a,A - a
+347,A - a,A - a
+348,A - a,A - a
+349,A - a,A - a
+350,A - a,A - a
+351,A - a,A - a
+352,A - a,A - a
+353,A - a,A - a
+354,A - a,A - a
+355,A - a,A - a
+356,A - a,A - a
+357,A - a,A - a
+358,A - a,A - a
+359,A - a,A - a
+360,A - a,A - a
+361,A - a,A - a
+362,A - a,A - a
+363,A - a,A - a
+364,A - a,A - a
+365,A - a,A - a
