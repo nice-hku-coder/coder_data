@@ -1,0 +1,11 @@
+Corpus length statistics
+Total documents: 5183
+
+Sentence counts: {'count': 5183, 'min': 3, 'max': 118, 'mean': 11.704804167470577, 'median': 9}
+Word counts: {'count': 5183, 'min': 26, 'max': 1524, 'mean': 201.81092031641907, 'median': 192}
+Char counts: {'count': 5183, 'min': 174, 'max': 10000, 'mean': 1401.0839282268955, 'median': 1330}
+
+Category counts:
+Short (<=4 sents): 325
+Medium (5-20 sents): 4275
+Long (>20 sents): 583
