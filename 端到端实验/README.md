@@ -1,14 +1,23 @@
+问: 这是我从Kaggle hotel reivew里面选出来的corpus，你给我编20个query左右，加上label，指明正确的酒店id是哪一个；要求是传统方法比如bm25, contriever, bge上回选错酒店，但是用我们的CoDeR方法能选对酒店。你仔细思考，看看能不能办到，然后输出我想要的。
+
+---
+
 可以办到。我基于你上传的 10 个 hotel corpus 做了一版 **20 条 adversarial constraint queries**。
 
 我这里采用的是 **hotel-level retrieval**：把同一个 `offering_id` 的 10 条 review 拼成一个 hotel document。然后我本地用一个简单 BM25 实现测了一下：**这 20 条 query 的 BM25 top-1 全部不是 gold hotel**，也就是 20/20 都能制造传统 lexical retriever 选错的效果。Contriever / BGE 我这里没有实际跑，所以我把它们标成 **expected wrong**，建议你后续用真实模型再筛一遍。
 
 文件我也整理好了：
 
-* [完整 JSONL：20 条 query + label + evidence + expected wrong hotel](sandbox:/mnt/data/coder_hotel_constraint_queries_20.jsonl)
-* [CSV 版本](sandbox:/mnt/data/coder_hotel_constraint_queries_20.csv)
-* [BEIR 风格 queries-only JSONL](sandbox:/mnt/data/coder_hotel_constraint_queries_only.jsonl)
-* [qrels TSV：gold=2, violating=-1](sandbox:/mnt/data/coder_hotel_constraint_qrels.tsv)
-* [BM25 检查结果](sandbox:/mnt/data/coder_hotel_constraint_queries_20_bm25_check.tsv)
+* 完整 JSONL：20 条 query + label + evidence + expected wrong hotel
+    - sandbox:/mnt/data/coder_hotel_constraint_queries_20.jsonl
+* CSV 版本
+    - sandbox:/mnt/data/coder_hotel_constraint_queries_20.csv
+* BEIR 风格 queries-only JSONL
+    - sandbox:/mnt/data/coder_hotel_constraint_queries_only.jsonl
+* qrels TSV：gold=2, violating=-1
+    - sandbox:/mnt/data/coder_hotel_constraint_qrels.tsv
+* BM25 检查结果
+    - sandbox:/mnt/data/coder_hotel_constraint_queries_20_bm25_check.tsv
 
 ---
 
