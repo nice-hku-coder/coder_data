@@ -9,15 +9,15 @@
 文件我也整理好了：
 
 * 完整 JSONL：20 条 query + label + evidence + expected wrong hotel
-    - sandbox:/mnt/data/coder_hotel_constraint_queries_20.jsonl
+    - coder_hotel_constraint_queries_20.jsonl
 * CSV 版本
-    - sandbox:/mnt/data/coder_hotel_constraint_queries_20.csv
+    - coder_hotel_constraint_queries_20.csv
 * BEIR 风格 queries-only JSONL
-    - sandbox:/mnt/data/coder_hotel_constraint_queries_only.jsonl
+    - coder_hotel_constraint_queries_only.jsonl
 * qrels TSV：gold=2, violating=-1
-    - sandbox:/mnt/data/coder_hotel_constraint_qrels.tsv
+    - coder_hotel_constraint_qrels.tsv
 * BM25 检查结果
-    - sandbox:/mnt/data/coder_hotel_constraint_queries_20_bm25_check.tsv
+    - coder_hotel_constraint_queries_20_bm25_check.tsv
 
 ---
 
