@@ -24,7 +24,11 @@
     "sleepy",
     "heart-racing",
     "unclear"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_01": 1.0,
+    "doc_02": 0.0
+  }
 }
 {
   "query_id": "drug_q002",
@@ -52,7 +56,11 @@
     "blurred vision",
     "drowsy",
     "blurry-eyed"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_03": 1.0,
+    "doc_04": 0.0
+  }
 }
 {
   "query_id": "drug_q003",
@@ -79,7 +87,11 @@
     "hungry",
     "foggy",
     "sluggish"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_05": 1.0,
+    "doc_06": 0.0
+  },
   "source": "synthetic_drug_end2end_v2_patch"
 }
 {
@@ -106,7 +118,11 @@
     "jittery",
     "sleepless",
     "revved up"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_07": 1.0,
+    "doc_08": 0.0
+  }
 }
 {
   "query_id": "drug_q005",
@@ -133,7 +149,11 @@
     "confusion",
     "nausea",
     "sedation"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_09": 1.0,
+    "doc_10": 0.0
+  }
 }
 {
   "query_id": "drug_q006",
@@ -160,7 +180,11 @@
     "drowsy",
     "foggy",
     "slow"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_11": 1.0,
+    "doc_12": 0.0
+  },
   "source": "synthetic_drug_end2end_v2_patch"
 }
 {
@@ -188,7 +212,11 @@
     "sleepiness",
     "dizziness",
     "mental fog"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_13": 1.0,
+    "doc_14": 0.0
+  }
 }
 {
   "query_id": "drug_q008",
@@ -215,7 +243,11 @@
     "restless",
     "shaky",
     "cramped"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_15": 1.0,
+    "doc_16": 0.0
+  }
 }
 {
   "query_id": "drug_q009",
@@ -241,7 +273,11 @@
     "triggering headache",
     "nausea",
     "light sensitivity"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_17": 1.0,
+    "doc_18": 0.0
+  }
 }
 {
   "query_id": "drug_q010",
@@ -267,7 +303,11 @@
     "wired",
     "anxious",
     "overly alert"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_19": 1.0,
+    "doc_20": 0.0
+  }
 }
 {
   "query_id": "drug_q011",
@@ -293,7 +333,11 @@
     "palpitations",
     "spikes",
     "pounding heartbeat"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_21": 1.0,
+    "doc_22": 0.0
+  }
 }
 {
   "query_id": "drug_q012",
@@ -318,7 +362,11 @@
     "diarrhea",
     "bloating",
     "urgent bathroom trips"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_23": 1.0,
+    "doc_24": 0.0
+  }
 }
 {
   "query_id": "drug_q013",
@@ -344,7 +392,11 @@
     "burning",
     "peeling",
     "red irritation"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_25": 1.0,
+    "doc_26": 0.0
+  }
 }
 {
   "query_id": "drug_q014",
@@ -369,7 +421,11 @@
     "wheezing",
     "tightness",
     "breathlessness"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_27": 1.0,
+    "doc_28": 0.0
+  }
 }
 {
   "query_id": "drug_q015",
@@ -396,7 +452,11 @@
     "foggy",
     "dry",
     "slow"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_29": 1.0,
+    "doc_30": 0.0
+  },
   "source": "synthetic_drug_end2end_v2_patch"
 }
 {
@@ -423,7 +483,11 @@
     "confusion",
     "heavy sleepiness",
     "clumsy walking"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_31": 1.0,
+    "doc_32": 0.0
+  }
 }
 {
   "query_id": "drug_q017",
@@ -449,7 +513,11 @@
     "high sugar",
     "hunger",
     "shaky"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_33": 1.0,
+    "doc_34": 0.0
+  }
 }
 {
   "query_id": "drug_q018",
@@ -475,7 +543,11 @@
     "flushing",
     "itching",
     "pounding heartbeat"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_35": 1.0,
+    "doc_36": 0.0
+  }
 }
 {
   "query_id": "drug_q019",
@@ -501,7 +573,11 @@
     "insomnia",
     "racing thoughts",
     "agitation"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_37": 1.0,
+    "doc_38": 0.0
+  }
 }
 {
   "query_id": "drug_q020",
@@ -527,5 +603,9 @@
     "sweaty",
     "tense",
     "racing"
-  ]
+  ],
+  "graded_relevance": {
+    "doc_39": 1.0,
+    "doc_40": 0.0
+  }
 }
