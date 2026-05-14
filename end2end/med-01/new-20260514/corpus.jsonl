@@ -1,0 +1,50 @@
+{"doc_id": "doc_01", "drug": "buspirone", "text": "One buspirone user stayed calm, clear, and comfortable at work with a steady heartbeat.", "role": "satisfying"}
+{"doc_id": "doc_02", "drug": "trazodone", "text": "One trazodone user sought daytime anxiety relief but became agitated, sleepy, unclear, and heart-racing at work.", "role": "violating"}
+{"doc_id": "doc_03", "drug": "ondansetron", "text": "One ondansetron user settled queasiness and continued normal tasks with sharp vision.", "role": "satisfying"}
+{"doc_id": "doc_04", "drug": "promethazine", "text": "One promethazine user took nausea medicine and reported drowsiness, blurred vision, and sleepiness.", "role": "violating"}
+{"doc_id": "doc_05", "drug": "bupropion", "text": "One bupropion user felt energized, clear, appetite-stable, and active through the day.", "role": "satisfying"}
+{"doc_id": "doc_06", "drug": "mirtazapine", "text": "One mirtazapine user tried depression medicine for daytime energy but became hungry, foggy, and sluggish.", "role": "violating"}
+{"doc_id": "doc_07", "drug": "atomoxetine", "text": "One atomoxetine user kept steady focus, calm behavior, and normal sleep during schoolwork.", "role": "satisfying"}
+{"doc_id": "doc_08", "drug": "amphetamine", "text": "One amphetamine user gained focus but felt jittery, sleepless, and physically revved up.", "role": "violating"}
+{"doc_id": "doc_09", "drug": "naproxen", "text": "One naproxen user had joint soreness ease and kept normal daytime function.", "role": "satisfying"}
+{"doc_id": "doc_10", "drug": "oxycodone", "text": "One oxycodone user got pain relief but had confusion, nausea, and heavy sedation.", "role": "violating"}
+{"doc_id": "doc_11", "drug": "loratadine", "text": "One loratadine user eased allergies in class while staying awake, clear, and quick.", "role": "satisfying"}
+{"doc_id": "doc_12", "drug": "diphenhydramine", "text": "One diphenhydramine user took allergy medicine for class and became drowsy, foggy, and slow.", "role": "violating"}
+{"doc_id": "doc_13", "drug": "benzonatate", "text": "One benzonatate user had quieter coughing while staying upright, balanced, and clear-minded.", "role": "satisfying"}
+{"doc_id": "doc_14", "drug": "codeine", "text": "One codeine user took cough medicine and reported sleepiness, dizziness, and mental fog.", "role": "violating"}
+{"doc_id": "doc_15", "drug": "famotidine", "text": "One famotidine user had heartburn settle and stayed relaxed, steady, and comfortable.", "role": "satisfying"}
+{"doc_id": "doc_16", "drug": "metoclopramide", "text": "One metoclopramide user tried it for stomach symptoms but felt restless, shaky, and cramped.", "role": "violating"}
+{"doc_id": "doc_17", "drug": "sumatriptan", "text": "One sumatriptan user had migraine pain fade with less nausea and calmer light sensitivity.", "role": "satisfying"}
+{"doc_id": "doc_18", "drug": "nitroglycerin", "text": "One nitroglycerin user triggered headache, nausea, and sharp light sensitivity instead of relief.", "role": "violating"}
+{"doc_id": "doc_19", "drug": "melatonin", "text": "One melatonin user became restful, relaxed, and ready for sleep at night.", "role": "satisfying"}
+{"doc_id": "doc_20", "drug": "pseudoephedrine", "text": "One pseudoephedrine user took it at night and felt wired, anxious, and overly alert.", "role": "violating"}
+{"doc_id": "doc_21", "drug": "amlodipine", "text": "One amlodipine user described steadier blood pressure with a calm, even heartbeat.", "role": "satisfying"}
+{"doc_id": "doc_22", "drug": "pseudoephedrine", "text": "One pseudoephedrine user reported blood pressure spikes, palpitations, and a pounding heartbeat.", "role": "violating"}
+{"doc_id": "doc_23", "drug": "dicyclomine", "text": "One dicyclomine user had calmer cramps and fewer urgent bathroom trips.", "role": "satisfying"}
+{"doc_id": "doc_24", "drug": "lactulose", "text": "One lactulose user discussed bowel symptoms but had diarrhea, bloating, and urgent bathroom trips.", "role": "violating"}
+{"doc_id": "doc_25", "drug": "clindamycin gel", "text": "One clindamycin gel user saw gentler acne clearing with calm skin and little redness.", "role": "satisfying"}
+{"doc_id": "doc_26", "drug": "tretinoin", "text": "One tretinoin user pursued acne clearing but described burning, peeling, and red irritation.", "role": "violating"}
+{"doc_id": "doc_27", "drug": "albuterol", "text": "One albuterol user felt the chest open and breathing become easier within minutes.", "role": "satisfying"}
+{"doc_id": "doc_28", "drug": "propranolol", "text": "One propranolol user described wheezing, chest tightness, and breathlessness during breathing trouble.", "role": "violating"}
+{"doc_id": "doc_29", "drug": "mirabegron", "text": "One mirabegron user reduced bladder urgency while staying clear-headed, hydrated, and mentally quick.", "role": "satisfying"}
+{"doc_id": "doc_30", "drug": "oxybutynin", "text": "One oxybutynin user took bladder medicine but became foggy, dry-mouthed, and mentally slow.", "role": "violating"}
+{"doc_id": "doc_31", "drug": "betahistine", "text": "One betahistine user felt steadier during vertigo with clear thinking and balanced walking.", "role": "satisfying"}
+{"doc_id": "doc_32", "drug": "diazepam", "text": "One diazepam user used it for vertigo but felt confused, heavily sleepy, and clumsy walking.", "role": "violating"}
+{"doc_id": "doc_33", "drug": "metformin", "text": "One metformin user reported steadier sugar with normal appetite and fewer shaky spells.", "role": "satisfying"}
+{"doc_id": "doc_34", "drug": "prednisone", "text": "One prednisone user noticed high sugar, hunger, and shaky spells while monitoring glucose.", "role": "violating"}
+{"doc_id": "doc_35", "drug": "atorvastatin", "text": "One atorvastatin user had lower cholesterol and felt steady without skin discomfort.", "role": "satisfying"}
+{"doc_id": "doc_36", "drug": "niacin", "text": "One niacin user lowered cholesterol but had flushing, itching, and a pounding heartbeat.", "role": "violating"}
+{"doc_id": "doc_37", "drug": "varenicline", "text": "One varenicline user had fewer cravings with calm evenings and normal sleep.", "role": "satisfying"}
+{"doc_id": "doc_38", "drug": "bupropion", "text": "One bupropion user tried quitting support but reported insomnia, racing thoughts, and agitation.", "role": "violating"}
+{"doc_id": "doc_39", "drug": "escitalopram", "text": "One escitalopram user felt gentler anxiety relief with steady mornings and relaxed muscles.", "role": "satisfying"}
+{"doc_id": "doc_40", "drug": "venlafaxine", "text": "One venlafaxine user sought anxiety relief but felt sweaty, tense, and physically racing.", "role": "violating"}
+{"doc_id": "doc_41", "drug": "sertraline", "text": "One sertraline user described general mood follow-up without workday constraint details.", "role": "neutral"}
+{"doc_id": "doc_42", "drug": "gabapentin", "text": "One gabapentin user mentioned nerve discomfort improvement without workplace performance details.", "role": "neutral"}
+{"doc_id": "doc_43", "drug": "cetirizine", "text": "One cetirizine user said seasonal symptoms improved without classroom performance details.", "role": "neutral"}
+{"doc_id": "doc_44", "drug": "ibuprofen", "text": "One ibuprofen user reported mild soreness improvement without cognitive or stomach details.", "role": "neutral"}
+{"doc_id": "doc_45", "drug": "omeprazole", "text": "One omeprazole user described fewer reflux episodes without movement or comfort details.", "role": "neutral"}
+{"doc_id": "doc_46", "drug": "fluoxetine", "text": "One fluoxetine user discussed general mood changes without meeting or coworker details.", "role": "neutral"}
+{"doc_id": "doc_47", "drug": "montelukast", "text": "One montelukast user described routine breathing control without rescue-inhaler comparison.", "role": "neutral"}
+{"doc_id": "doc_48", "drug": "hydroxyzine", "text": "One hydroxyzine user mentioned anxiety treatment without work conversation details.", "role": "neutral"}
+{"doc_id": "doc_49", "drug": "topiramate", "text": "One topiramate user discussed prevention follow-up without acute migraine symptom details.", "role": "neutral"}
+{"doc_id": "doc_50", "drug": "solifenacin", "text": "One solifenacin user logged routine follow-up outcomes with few specific details.", "role": "neutral"}
