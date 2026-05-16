@@ -43,7 +43,7 @@ def write_jsonl(path: Path, rows: Iterable[dict]) -> None:
 
 def convert_nevir(source_dir: Path, output_dir: Path) -> None:
     corpus: dict[str, dict[str, object]] = {}
-    queries: dict[str, str] = {}
+    queries: dict[str, dict[str, object]] = {}
     qrels_by_split: dict[str, list[tuple[str, str, int]]] = {}
     pairs_by_split: dict[str, list[dict[str, str]]] = {}
 
@@ -64,8 +64,28 @@ def convert_nevir(source_dir: Path, output_dir: Path) -> None:
 
             corpus[doc1_id] = {"_id": doc1_id, "title": "", "text": row["doc1"], "metadata": {}}
             corpus[doc2_id] = {"_id": doc2_id, "title": "", "text": row["doc2"], "metadata": {}}
-            queries[q1_id] = row["q1"]
-            queries[q2_id] = row["q2"]
+            queries[q1_id] = {
+                "_id": q1_id,
+                "text": row["q1"],
+                "metadata": {},
+                "constraint_satisfying_doc_ids": [doc1_id],
+                "constraint_violating_doc_ids": [doc2_id],
+                "graded_relevance": {
+                    doc1_id: 2.0,
+                    doc2_id: 0.0,
+                },
+            }
+            queries[q2_id] = {
+                "_id": q2_id,
+                "text": row["q2"],
+                "metadata": {},
+                "constraint_satisfying_doc_ids": [doc2_id],
+                "constraint_violating_doc_ids": [doc1_id],
+                "graded_relevance": {
+                    doc2_id: 2.0,
+                    doc1_id: 0.0,
+                },
+            }
 
             qrels.append((q1_id, doc1_id, 1))
             qrels.append((q2_id, doc2_id, 1))
@@ -89,10 +109,7 @@ def convert_nevir(source_dir: Path, output_dir: Path) -> None:
     pairs_dir.mkdir(exist_ok=True)
 
     write_jsonl(output_dir / "corpus.jsonl", corpus.values())
-    write_jsonl(
-        output_dir / "queries.jsonl",
-        ({"_id": query_id, "text": text, "metadata": {}} for query_id, text in queries.items()),
-    )
+    write_jsonl(output_dir / "queries.jsonl", queries.values())
 
     for split, qrels in qrels_by_split.items():
         with (qrels_dir / f"{split}.tsv").open("w", encoding="utf-8") as f:
