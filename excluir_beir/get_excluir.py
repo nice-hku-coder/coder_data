@@ -6,11 +6,18 @@ Convert ExcluIR to BEIR format.
 
 Output:
   beir/excluir/
-    corpus.jsonl
-    queries.jsonl
-    qrels/
-      test.tsv
-    excluir_meta.jsonl
+    train_set/
+      corpus.jsonl
+      queries.jsonl
+      qrels/
+        train.tsv
+      excluir_meta.jsonl
+    test_set/
+      corpus.jsonl
+      queries.jsonl
+      qrels/
+        test.tsv
+      excluir_meta.jsonl
 
 Run:
   python convert_excluir_to_beir.py
@@ -22,7 +29,7 @@ Optional:
 
 import argparse
 import json
-import os
+import random
 import subprocess
 import sys
 from pathlib import Path
@@ -182,7 +189,23 @@ def extract_query_and_indices(sample: Dict[str, Any], sample_id: int) -> Tuple[s
     return str(query), indices, extra
 
 
-def convert_to_beir(raw_dir: Path, out_dir: Path, split: str = "test"):
+def make_train_test_split(num_samples: int, train_ratio: float, seed: int) -> Dict[int, str]:
+    if not 0.0 < train_ratio < 1.0:
+        raise ValueError(f"train_ratio must be between 0 and 1, got {train_ratio}")
+
+    indices = list(range(num_samples))
+    rng = random.Random(seed)
+    rng.shuffle(indices)
+
+    train_size = int(num_samples * train_ratio)
+    train_indices = set(indices[:train_size])
+    return {
+        idx: "train" if idx in train_indices else "test"
+        for idx in range(num_samples)
+    }
+
+
+def convert_to_beir(raw_dir: Path, out_dir: Path, train_ratio: float = 0.2, seed: int = 42):
     corpus_path = find_file(raw_dir, "corpus.json")
     test_path = find_file(raw_dir, "test_manual_final.json")
 
@@ -198,9 +221,13 @@ def convert_to_beir(raw_dir: Path, out_dir: Path, split: str = "test"):
     if not isinstance(samples, list):
         raise ValueError(f"Expected test_manual_final.json to be a list, got {type(samples)}")
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-    qrels_dir = out_dir / "qrels"
-    qrels_dir.mkdir(parents=True, exist_ok=True)
+    split_dirs = {
+        "train": out_dir / "train_set",
+        "test": out_dir / "test_set",
+    }
+    for split_dir in split_dirs.values():
+        split_dir.mkdir(parents=True, exist_ok=True)
+        (split_dir / "qrels").mkdir(parents=True, exist_ok=True)
 
     # 1. corpus.jsonl
     corpus_rows = []
@@ -214,15 +241,26 @@ def convert_to_beir(raw_dir: Path, out_dir: Path, split: str = "test"):
             }
         )
 
-    write_jsonl(out_dir / "corpus.jsonl", corpus_rows)
+    for split_dir in split_dirs.values():
+        write_jsonl(split_dir / "corpus.jsonl", corpus_rows)
 
-    # 2. queries.jsonl, qrels/test.tsv, excluir_meta.jsonl
-    query_rows = []
-    meta_rows = []
+    # 2. queries.jsonl, qrels/{train,test}.tsv, excluir_meta.jsonl
+    query_rows = {"train": [], "test": []}
+    meta_rows = {"train": [], "test": []}
+    sample_splits = make_train_test_split(len(samples), train_ratio=train_ratio, seed=seed)
 
-    qrels_path = qrels_dir / f"{split}.tsv"
-    with qrels_path.open("w", encoding="utf-8") as qf:
-        qf.write("query-id\tcorpus-id\tscore\n")
+    qrels_paths = {
+        split: split_dir / "qrels" / f"{split}.tsv"
+        for split, split_dir in split_dirs.items()
+    }
+    qrels_files = {
+        split: path.open("w", encoding="utf-8")
+        for split, path in qrels_paths.items()
+    }
+
+    try:
+        for qf in qrels_files.values():
+            qf.write("query-id\tcorpus-id\tscore\n")
 
         for qi, sample in enumerate(samples):
             if not isinstance(sample, dict):
@@ -241,24 +279,33 @@ def convert_to_beir(raw_dir: Path, out_dir: Path, split: str = "test"):
                     )
 
             query_id = f"excluir_q_{qi}"
+            sample_split = sample_splits[qi]
 
             positive_doc_ids = [f"excluir_doc_{idx}" for idx in pos_indices]
             violating_doc_ids = [f"excluir_doc_{idx}" for idx in neg_indices]
 
-            query_rows.append(
+            query_rows[sample_split].append(
                 {
                     "_id": query_id,
                     "text": query_text,
+                    "constraint_satisfying_doc_ids": positive_doc_ids,
+                    "constraint_violating_doc_ids": violating_doc_ids,
+                    "graded_relevance": {
+                        **{doc_id: 2.0 for doc_id in positive_doc_ids},
+                        **{doc_id: 0.0 for doc_id in violating_doc_ids},
+                    },
+                    "topical_relevant_doc_ids": positive_doc_ids + violating_doc_ids,
                 }
             )
 
             for doc_id in positive_doc_ids:
-                qf.write(f"{query_id}\t{doc_id}\t1\n")
+                qrels_files[sample_split].write(f"{query_id}\t{doc_id}\t1\n")
 
-            meta_rows.append(
+            meta_rows[sample_split].append(
                 {
                     "query_id": query_id,
                     "query_text": query_text,
+                    "split": sample_split,
                     "positive_doc_ids": positive_doc_ids,
                     "violating_doc_ids": violating_doc_ids,
                     "positive_indices": pos_indices,
@@ -267,20 +314,27 @@ def convert_to_beir(raw_dir: Path, out_dir: Path, split: str = "test"):
                     "source_extra": extra,
                 }
             )
+    finally:
+        for qf in qrels_files.values():
+            qf.close()
 
-    write_jsonl(out_dir / "queries.jsonl", query_rows)
-    write_jsonl(out_dir / "excluir_meta.jsonl", meta_rows)
+    for split, split_dir in split_dirs.items():
+        write_jsonl(split_dir / "queries.jsonl", query_rows[split])
+        write_jsonl(split_dir / "excluir_meta.jsonl", meta_rows[split])
 
     print("\n[DONE] Saved BEIR-format ExcluIR:")
-    print(f"  {out_dir / 'corpus.jsonl'}")
-    print(f"  {out_dir / 'queries.jsonl'}")
-    print(f"  {qrels_path}")
-    print(f"  {out_dir / 'excluir_meta.jsonl'}")
+    for split, split_dir in split_dirs.items():
+        print(f"  {split_dir / 'corpus.jsonl'}")
+        print(f"  {split_dir / 'queries.jsonl'}")
+        print(f"  {qrels_paths[split]}")
+        print(f"  {split_dir / 'excluir_meta.jsonl'}")
     print()
     print(f"[STATS] corpus docs: {len(corpus_rows)}")
-    print(f"[STATS] queries:     {len(query_rows)}")
-    print(f"[STATS] qrels:       {sum(len(r['positive_doc_ids']) for r in meta_rows)}")
-    print(f"[STATS] violating:   {sum(len(r['violating_doc_ids']) for r in meta_rows)}")
+    print(f"[STATS] train queries: {len(query_rows['train'])}")
+    print(f"[STATS] test queries:  {len(query_rows['test'])}")
+    print(f"[STATS] train qrels:   {sum(len(r['positive_doc_ids']) for r in meta_rows['train'])}")
+    print(f"[STATS] test qrels:    {sum(len(r['positive_doc_ids']) for r in meta_rows['test'])}")
+    print(f"[STATS] violating:     {sum(len(r['violating_doc_ids']) for rows in meta_rows.values() for r in rows)}")
 
 
 def main():
@@ -298,10 +352,16 @@ def main():
         help="Output directory for BEIR-format ExcluIR.",
     )
     parser.add_argument(
-        "--split",
-        type=str,
-        default="test",
-        help="BEIR qrels split name. Default: test.",
+        "--train_ratio",
+        type=float,
+        default=0.2,
+        help="Fraction of queries assigned to train. Default: 0.2 for a 2:8 train/test split.",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=42,
+        help="Random seed for reproducible train/test splitting.",
     )
     parser.add_argument(
         "--no_download",
@@ -322,7 +382,7 @@ def main():
     if not args.no_download:
         download_excluir(raw_dir, force=args.force_download)
 
-    convert_to_beir(raw_dir, out_dir, split=args.split)
+    convert_to_beir(raw_dir, out_dir, train_ratio=args.train_ratio, seed=args.seed)
 
 
 if __name__ == "__main__":
