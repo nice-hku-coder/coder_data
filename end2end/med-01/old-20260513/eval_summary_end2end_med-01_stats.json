@@ -1,0 +1,1896 @@
+{
+  "benchmark_file": "/home/tangxb/CoDeR/../coder_data/end2end/med-01/query.jsonl",
+  "corpus_file": "/home/tangxb/CoDeR/../coder_data/end2end/med-01/corpus.jsonl",
+  "dataset_name": "query",
+  "metric_definition": {
+    "violation_doc": "A document listed in constraint_violating_doc_ids; if absent, fallback to topical_relevant_doc_ids minus constraint_satisfying_doc_ids.",
+    "recall@5": "Recall on topical_relevant_doc_ids at top-5.",
+    "recall@10": "Recall on topical_relevant_doc_ids at top-10.",
+    "ndcg@5": "nDCG@5 computed from graded_relevance labels.",
+    "ndcg@10": "nDCG@10 computed from graded_relevance labels.",
+    "violation_at_k": "Probability that at least one violating document appears within top-k, averaged over queries.",
+    "first_violating_rank": "Rank position of the first violating document within top-10; 11 means none found.",
+    "build_time": "Wall-clock build time in seconds for model loading, document encoding, index construction, and cache initialization before online queries.",
+    "spend_time": "Wall-clock execution time in seconds for the online query stage over all queries in this report.",
+    "total_time": "Sum of build_time and spend_time in seconds.",
+    "api_cost": "Accumulated API cost in USD reported by the provider response when available; otherwise 0.0.",
+    "api_token": "Accumulated API tokens reported by the provider response when available; otherwise 0.",
+    "coder": "CoDeR combines encoder A and encoder B scores with alpha weighting and tau filtering, mirroring eval_retrieval_metrics.py."
+  },
+  "target_categories": [
+    "antonym",
+    "negation",
+    "exclusion"
+  ],
+  "k_values": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "models": {
+    "BM25": "BM25",
+    "BGE": "/home/tangxb/CoDeR/models/BAAI_bge-large-en-v1.5",
+    "Contriever": "/home/tangxb/CoDeR/models/facebook_contriever",
+    "NS-IR": {
+      "encoder": "/home/tangxb/CoDeR/models/BAAI_bge-large-en-v1.5",
+      "generator": "gpt-4o",
+      "api_base_url": "https://www.dmxapi.cn/v1",
+      "retrieve_k": 100,
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "distortion": 0.2,
+      "sinkhorn": false,
+      "epsilon": 0.1,
+      "stop_thr": 1e-06,
+      "num_itermax": 1000,
+      "implementation_note": "Aligned with NS-IR-main: initial dense retrieval on the topic encoder, then query/doc FOL generation, OT-based logic alignment, connective masking, and candidate-only reranking. The local motivation utils module mirrors the original control flow and prompt parsing.",
+      "cache_file": "outputs/reports/nsir_generation_data/nsir_generations_end2end_med-01.jsonl"
+    }
+  },
+  "dual_config": {},
+  "run_metadata": {
+    "aggregated": true,
+    "run_count": 1,
+    "source_reports": [
+      "eval_summary_end2end_med-01_1.json"
+    ]
+  },
+  "summary": {
+    "BM25": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "BM25",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 0.0006164237856864929,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.003482094034552574,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 0.004098517820239067,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "BGE": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.4,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "BGE",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 2.1155268820002675,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.4,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.6538450820371509,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 2.7693719640374184,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.75,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "Contriever": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.25,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "Contriever",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 1.8916018097661436,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.25,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.875,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.875,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.1958999540656805,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 2.087501763831824,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.8,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "BGE-TrainTriplets": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.8333333333333334,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.7,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "BGE-TrainTriplets",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 2.070983133278787,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.7,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.6786804948933423,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 2.7496636281721294,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.7,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.95,
+          "std": 0.0
+        }
+      }
+    },
+    "CoDeR_v1": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.6,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "CoDeR_v1",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 3.474553856998682,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.6,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.9524441980756819,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 4.426998055074364,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.6,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "BGE-RetrievalTriplets": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.5,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.5714285714285714,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 4.95,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 3.5,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "BGE-RetrievalTriplets",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 2.578774193767458,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 4.95,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.875,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.85,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.4642357360571623,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 3.0430099298246205,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.05,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 0.75,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.45,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.5,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.7,
+          "std": 0.0
+        }
+      }
+    },
+    "CoDeR_v2": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.8333333333333334,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 2.45,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "CoDeR_v2",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 3.308792123105377,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 2.45,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 1.066483261063695,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 4.375275384169072,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.35,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.7,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.85,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.95,
+          "std": 0.0
+        }
+      }
+    },
+    "BGE-AntsyncTriplets": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.8333333333333334,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 2.45,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "BGE-AntsyncTriplets",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 2.5195585638284683,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 2.45,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.47374620707705617,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 2.9933047709055245,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.35,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.7,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.95,
+          "std": 0.0
+        }
+      }
+    },
+    "CoDeR_v3": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.4,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "CoDeR_v3",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 3.5222166487947106,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.4,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.975,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.9565070709213614,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 4.478723719716072,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.75,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "BGE-ExclusionTriplets": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.16666666666666666,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.7142857142857143,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.2857142857142857,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 6.35,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 6.5,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "BGE-ExclusionTriplets",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 2.4588612713851035,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 6.35,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 0.875,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.675,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 0.5255043688230217,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 2.984365640208125,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.1,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 0.75,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.3,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.3,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.4,
+          "std": 0.0
+        }
+      }
+    },
+    "CoDeR_v4": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.8333333333333334,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 2.1,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "CoDeR_v4",
+      "overall": {
+        "api_cost": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 3.4365468849428,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 2.1,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 1.0017425939440727,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 4.4382894788868725,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.4,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.8,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.9,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.95,
+          "std": 0.0
+        }
+      }
+    },
+    "NS-IR": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.12628999999999996,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 19799.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 10239.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 9560.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 70.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 19799.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 1.7,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "NS-IR",
+      "overall": {
+        "api_cost": {
+          "mean": 0.12628999999999996,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 19799.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 3.6547649828717113,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 1.7,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 728.561955019366,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 732.2167200022377,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.45,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.85,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "HyDE": {
+      "api_usage": {
+        "api_cost_usd": {
+          "mean": 0.31077,
+          "std": 0.0
+        },
+        "api_tokens": {
+          "mean": 35829.0,
+          "std": 0.0
+        },
+        "completion_tokens": {
+          "mean": 29493.0,
+          "std": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 6336.0,
+          "std": 0.0
+        },
+        "request_count": {
+          "mean": 160.0,
+          "std": 0.0
+        },
+        "total_tokens": {
+          "mean": 35829.0,
+          "std": 0.0
+        }
+      },
+      "by_category": {
+        "antonym": {
+          "count": {
+            "mean": 6.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "exclusion": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 1.0,
+            "std": 0.0
+          }
+        },
+        "negation": {
+          "count": {
+            "mean": 7.0,
+            "std": 0.0
+          },
+          "v@5": {
+            "mean": 0.8571428571428571,
+            "std": 0.0
+          }
+        }
+      },
+      "first_violating_rank": {
+        "max_k": {
+          "mean": 10.0,
+          "std": 0.0
+        },
+        "mean": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "median": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "no_violation_value": {
+          "mean": 11.0,
+          "std": 0.0
+        }
+      },
+      "method": "HyDE",
+      "overall": {
+        "api_cost": {
+          "mean": 0.31077,
+          "std": 0.0
+        },
+        "api_token": {
+          "mean": 35829.0,
+          "std": 0.0
+        },
+        "build_time": {
+          "mean": 1.5813608369790018,
+          "std": 0.0
+        },
+        "fvr_mean": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "ndcg@10": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ndcg@5": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "recall@5": {
+          "mean": 0.925,
+          "std": 0.0
+        },
+        "spend_time": {
+          "mean": 715.3190248170868,
+          "std": 0.0
+        },
+        "total_time": {
+          "mean": 716.9003856540658,
+          "std": 0.0
+        },
+        "v@1": {
+          "mean": 0.4,
+          "std": 0.0
+        },
+        "v@10": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "v@2": {
+          "mean": 0.75,
+          "std": 0.0
+        },
+        "v@3": {
+          "mean": 0.95,
+          "std": 0.0
+        },
+        "v@5": {
+          "mean": 0.95,
+          "std": 0.0
+        }
+      }
+    }
+  }
+}

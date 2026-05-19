@@ -1,0 +1,367 @@
+_id,formulation,method
+0,A - a,paper_count_aligned_best_fit
+1,A - a,paper_count_aligned_best_fit
+2,A - a,paper_count_aligned_best_fit
+3,A - a,paper_count_aligned_best_fit
+4,A - a,paper_count_aligned_best_fit
+5,A - a,paper_count_aligned_best_fit
+6,A - a,paper_count_aligned_best_fit
+7,A - a,paper_count_aligned_best_fit
+8,A - a,paper_count_aligned_best_fit
+9,A - a,paper_count_aligned_best_fit
+10,A - a,paper_count_aligned_best_fit
+11,A - a,paper_count_aligned_best_fit
+12,A - a,paper_count_aligned_best_fit
+13,A - a,paper_count_aligned_best_fit
+14,A - a,paper_count_aligned_best_fit
+15,A - a,paper_count_aligned_best_fit
+16,(A - a) ∪ B,paper_count_aligned_best_fit
+17,A - a,paper_count_aligned_best_fit
+18,(A - a) ∪ B,paper_count_aligned_best_fit
+19,(A - a) ∪ B,paper_count_aligned_best_fit
+20,(A - a) ∪ B,paper_count_aligned_best_fit
+21,A - a,paper_count_aligned_best_fit
+22,A - a,paper_count_aligned_best_fit
+23,(A - a) ∪ B,paper_count_aligned_best_fit
+24,(A - a) ∪ B,paper_count_aligned_best_fit
+25,(A - a) ∪ B,paper_count_aligned_best_fit
+26,(A - a) ∪ B,paper_count_aligned_best_fit
+27,(A - a) ∪ B,paper_count_aligned_best_fit
+28,A - a,paper_count_aligned_best_fit
+29,(A - a) ∪ B,paper_count_aligned_best_fit
+30,(A - a) ∪ B,paper_count_aligned_best_fit
+31,A - a,paper_count_aligned_best_fit
+32,(A - a) ∪ B,paper_count_aligned_best_fit
+33,A - a,paper_count_aligned_best_fit
+34,A - a,paper_count_aligned_best_fit
+35,A - a,paper_count_aligned_best_fit
+36,A - a,paper_count_aligned_best_fit
+37,A - a,paper_count_aligned_best_fit
+38,A - a,paper_count_aligned_best_fit
+39,A - a,paper_count_aligned_best_fit
+40,A - a,paper_count_aligned_best_fit
+41,A - a,paper_count_aligned_best_fit
+42,A - a,paper_count_aligned_best_fit
+43,A - a,paper_count_aligned_best_fit
+44,(A - a) ∪ B,paper_count_aligned_best_fit
+45,A - a,paper_count_aligned_best_fit
+46,A - a,paper_count_aligned_best_fit
+47,A - a,paper_count_aligned_best_fit
+48,A - a,paper_count_aligned_best_fit
+49,A - a,paper_count_aligned_best_fit
+50,A - a,paper_count_aligned_best_fit
+51,(A - a) ∪ B,paper_count_aligned_best_fit
+52,(A - a) ∪ B,paper_count_aligned_best_fit
+53,(A - a) ∪ B,paper_count_aligned_best_fit
+54,A - a,paper_count_aligned_best_fit
+55,A - a,paper_count_aligned_best_fit
+56,A - a,paper_count_aligned_best_fit
+57,(A - a) ∪ B,paper_count_aligned_best_fit
+58,(A - a) ∪ B,paper_count_aligned_best_fit
+59,(A - a) ∪ B,paper_count_aligned_best_fit
+60,(A - a) ∪ B,paper_count_aligned_best_fit
+61,(A - a) ∪ B,paper_count_aligned_best_fit
+62,A - a,paper_count_aligned_best_fit
+63,(A - a) ∪ B,paper_count_aligned_best_fit
+64,(A - a) ∪ B,paper_count_aligned_best_fit
+65,A - a,paper_count_aligned_best_fit
+66,A - a,paper_count_aligned_best_fit
+67,(A - a) ∪ B,paper_count_aligned_best_fit
+68,(A - a) ∪ B,paper_count_aligned_best_fit
+69,A - a,paper_count_aligned_best_fit
+70,A - a,paper_count_aligned_best_fit
+71,(A - a) ∪ B,paper_count_aligned_best_fit
+72,A - a,paper_count_aligned_best_fit
+73,(A - a) ∪ B,paper_count_aligned_best_fit
+74,A - a,paper_count_aligned_best_fit
+75,A - a,paper_count_aligned_best_fit
+76,A - a,paper_count_aligned_best_fit
+77,A - a,paper_count_aligned_best_fit
+78,A - a,paper_count_aligned_best_fit
+79,(A - a) ∪ B,paper_count_aligned_best_fit
+80,(A - a) ∪ B,paper_count_aligned_best_fit
+81,(A - a) ∪ B,paper_count_aligned_best_fit
+82,(A - a) ∪ B,paper_count_aligned_best_fit
+83,(A - a) ∪ B,paper_count_aligned_best_fit
+84,(A - a) ∪ B,paper_count_aligned_best_fit
+85,(A - a) ∪ B,paper_count_aligned_best_fit
+86,(A - a) ∪ B,paper_count_aligned_best_fit
+87,A - a,paper_count_aligned_best_fit
+88,(A - a) ∪ B,paper_count_aligned_best_fit
+89,(A - a) ∪ B,paper_count_aligned_best_fit
+90,(A - a) ∪ B,paper_count_aligned_best_fit
+91,(A - a) ∪ B,paper_count_aligned_best_fit
+92,A - a,paper_count_aligned_best_fit
+93,(A - a) ∪ B,paper_count_aligned_best_fit
+94,(A - a) ∪ B,paper_count_aligned_best_fit
+95,A - a,paper_count_aligned_best_fit
+96,(A - a) ∪ B,paper_count_aligned_best_fit
+97,(A - a) ∪ B,paper_count_aligned_best_fit
+98,(A - a) ∪ B,paper_count_aligned_best_fit
+99,A - a,paper_count_aligned_best_fit
+100,(A - a) ∪ B,paper_count_aligned_best_fit
+101,(A - a) ∪ B,paper_count_aligned_best_fit
+102,A - a,paper_count_aligned_best_fit
+103,(A - a) ∪ B,paper_count_aligned_best_fit
+104,A - a,paper_count_aligned_best_fit
+105,(A - a) ∪ B,paper_count_aligned_best_fit
+106,(A - a) ∪ B,paper_count_aligned_best_fit
+107,(A - a) ∪ B,paper_count_aligned_best_fit
+108,(A - a) ∪ B,paper_count_aligned_best_fit
+109,(A - a) ∪ B,paper_count_aligned_best_fit
+110,A - a,paper_count_aligned_best_fit
+111,(A - a) ∪ B,paper_count_aligned_best_fit
+112,(A - a) ∪ B,paper_count_aligned_best_fit
+113,(A - a) ∪ B,paper_count_aligned_best_fit
+114,(A - a) ∪ B,paper_count_aligned_best_fit
+115,(A - a) ∪ B,paper_count_aligned_best_fit
+116,(A - a) ∪ B,paper_count_aligned_best_fit
+117,A - a,paper_count_aligned_best_fit
+118,(A - a) ∪ B,paper_count_aligned_best_fit
+119,(A - a) ∪ B,paper_count_aligned_best_fit
+120,(A - a) ∪ B,paper_count_aligned_best_fit
+121,(A - a) ∪ B,paper_count_aligned_best_fit
+122,(A - a) ∪ B,paper_count_aligned_best_fit
+123,(A - a) ∪ B,paper_count_aligned_best_fit
+124,(A - a) ∪ B,paper_count_aligned_best_fit
+125,(A - a) ∪ B,paper_count_aligned_best_fit
+126,(A - a) ∪ B,paper_count_aligned_best_fit
+127,A - a,paper_count_aligned_best_fit
+128,(A - a) ∪ B,paper_count_aligned_best_fit
+129,(A - a) ∪ B,paper_count_aligned_best_fit
+130,(A - a) ∪ B,paper_count_aligned_best_fit
+131,(A - a) ∪ B,paper_count_aligned_best_fit
+132,(A - a) ∪ B,paper_count_aligned_best_fit
+133,(A - a) ∪ B,paper_count_aligned_best_fit
+134,(A - a) ∪ B,paper_count_aligned_best_fit
+135,(A - a) ∪ B,paper_count_aligned_best_fit
+136,A - a,paper_count_aligned_best_fit
+137,(A - a) ∪ B,paper_count_aligned_best_fit
+138,(A - a) ∪ B,paper_count_aligned_best_fit
+139,(A - a) ∪ B,paper_count_aligned_best_fit
+140,(A - a) ∪ B,paper_count_aligned_best_fit
+141,A - a,paper_count_aligned_best_fit
+142,(A - a) ∪ B,paper_count_aligned_best_fit
+143,(A - a) ∪ B,paper_count_aligned_best_fit
+144,(A - a) ∪ B,paper_count_aligned_best_fit
+145,A - a,paper_count_aligned_best_fit
+146,A - a,paper_count_aligned_best_fit
+147,(A - a) ∪ B,paper_count_aligned_best_fit
+148,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+149,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+150,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+151,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+152,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+153,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+154,A - a,paper_count_aligned_best_fit
+155,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+156,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+157,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+158,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+159,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+160,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+161,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+162,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+163,A - a,paper_count_aligned_best_fit
+164,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+165,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+166,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+167,A - a,paper_count_aligned_best_fit
+168,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+169,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+170,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+171,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+172,A - a,paper_count_aligned_best_fit
+173,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+174,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+175,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+176,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+177,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+178,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+179,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+180,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+181,A - a,paper_count_aligned_best_fit
+182,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+183,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+184,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+185,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+186,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+187,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+188,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+189,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+190,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+191,A - a,paper_count_aligned_best_fit
+192,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+193,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+194,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+195,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+196,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+197,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+198,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+199,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+200,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+201,A - a,paper_count_aligned_best_fit
+202,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+203,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+204,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+205,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+206,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+207,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+208,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+209,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+210,A - a,paper_count_aligned_best_fit
+211,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+212,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+213,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+214,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+215,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+216,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+217,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+218,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+219,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+220,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+221,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+222,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+223,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+224,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+225,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+226,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+227,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+228,A - a,paper_count_aligned_best_fit
+229,A - a,paper_count_aligned_best_fit
+230,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+231,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+232,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+233,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+234,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+235,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+236,A - a,paper_count_aligned_best_fit
+237,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+238,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+239,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+240,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+241,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+242,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+243,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+244,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+245,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+246,A - a,paper_count_aligned_best_fit
+247,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+248,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+249,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+250,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+251,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+252,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+253,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+254,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+255,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+256,A - a,paper_count_aligned_best_fit
+257,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+258,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+259,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+260,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+261,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+262,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+263,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+264,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+265,A - a,paper_count_aligned_best_fit
+266,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+267,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+268,(A - a) ∪ (B - b),paper_count_aligned_best_fit
+269,(A - a) ∪ B,paper_count_aligned_best_fit
+270,(A - a) ∪ B,paper_count_aligned_best_fit
+271,(A - a) ∪ B,paper_count_aligned_best_fit
+272,(A - a) ∪ B,paper_count_aligned_best_fit
+273,A - a,paper_count_aligned_best_fit
+274,(A - a) ∪ B,paper_count_aligned_best_fit
+275,(A - a) ∪ B,paper_count_aligned_best_fit
+276,(A - a) ∪ B,paper_count_aligned_best_fit
+277,(A - a) ∪ B,paper_count_aligned_best_fit
+278,(A - a) ∪ B,paper_count_aligned_best_fit
+279,(A - a) ∪ B,paper_count_aligned_best_fit
+280,(A - a) ∪ B,paper_count_aligned_best_fit
+281,A - a,paper_count_aligned_best_fit
+282,(A - a) ∪ B,paper_count_aligned_best_fit
+283,(A - a) ∪ B,paper_count_aligned_best_fit
+284,(A - a) ∪ B,paper_count_aligned_best_fit
+285,(A - a) ∪ B,paper_count_aligned_best_fit
+286,(A - a) ∪ B,paper_count_aligned_best_fit
+287,(A - a) ∪ B,paper_count_aligned_best_fit
+288,(A - a) ∪ B,paper_count_aligned_best_fit
+289,(A - a) ∪ B,paper_count_aligned_best_fit
+290,A - a,paper_count_aligned_best_fit
+291,(A - a) ∪ B,paper_count_aligned_best_fit
+292,(A - a) ∪ B,paper_count_aligned_best_fit
+293,(A - a) ∪ B,paper_count_aligned_best_fit
+294,(A - a) ∪ B,paper_count_aligned_best_fit
+295,A - a,paper_count_aligned_best_fit
+296,(A - a) ∪ B,paper_count_aligned_best_fit
+297,(A - a) ∪ B,paper_count_aligned_best_fit
+298,(A - a) ∪ B,paper_count_aligned_best_fit
+299,(A - a) ∪ B,paper_count_aligned_best_fit
+300,(A - a) ∪ B,paper_count_aligned_best_fit
+301,(A - a) ∪ B,paper_count_aligned_best_fit
+302,(A - a) ∪ B,paper_count_aligned_best_fit
+303,(A - a) ∪ B,paper_count_aligned_best_fit
+304,(A - a) ∪ B,paper_count_aligned_best_fit
+305,A - a,paper_count_aligned_best_fit
+306,(A - a) ∪ B,paper_count_aligned_best_fit
+307,(A - a) ∪ B,paper_count_aligned_best_fit
+308,(A - a) ∪ B,paper_count_aligned_best_fit
+309,(A - a) ∪ B,paper_count_aligned_best_fit
+310,(A - a) ∪ B,paper_count_aligned_best_fit
+311,(A - a) ∪ B,paper_count_aligned_best_fit
+312,(A - a) ∪ B,paper_count_aligned_best_fit
+313,(A - a) ∪ B,paper_count_aligned_best_fit
+314,A - a,paper_count_aligned_best_fit
+315,A - a,paper_count_aligned_best_fit
+316,A - a,paper_count_aligned_best_fit
+317,A - a,paper_count_aligned_best_fit
+318,A - a,paper_count_aligned_best_fit
+319,A - a,paper_count_aligned_best_fit
+320,A - a,paper_count_aligned_best_fit
+321,A - a,paper_count_aligned_best_fit
+322,A - a,paper_count_aligned_best_fit
+323,A - a,paper_count_aligned_best_fit
+324,A - a,paper_count_aligned_best_fit
+325,A - a,paper_count_aligned_best_fit
+326,A - a,paper_count_aligned_best_fit
+327,A - a,paper_count_aligned_best_fit
+328,A - a,paper_count_aligned_best_fit
+329,A - a,paper_count_aligned_best_fit
+330,A - a,paper_count_aligned_best_fit
+331,A - a,paper_count_aligned_best_fit
+332,A - a,paper_count_aligned_best_fit
+333,A - a,paper_count_aligned_best_fit
+334,A - a,paper_count_aligned_best_fit
+335,A - a,paper_count_aligned_best_fit
+336,A - a,paper_count_aligned_best_fit
+337,A - a,paper_count_aligned_best_fit
+338,A - a,paper_count_aligned_best_fit
+339,A - a,paper_count_aligned_best_fit
+340,A - a,paper_count_aligned_best_fit
+341,A - a,paper_count_aligned_best_fit
+342,A - a,paper_count_aligned_best_fit
+343,A - a,paper_count_aligned_best_fit
+344,A - a,paper_count_aligned_best_fit
+345,A - a,paper_count_aligned_best_fit
+346,A - a,paper_count_aligned_best_fit
+347,A - a,paper_count_aligned_best_fit
+348,A - a,paper_count_aligned_best_fit
+349,A - a,paper_count_aligned_best_fit
+350,A - a,paper_count_aligned_best_fit
+351,A - a,paper_count_aligned_best_fit
+352,A - a,paper_count_aligned_best_fit
+353,A - a,paper_count_aligned_best_fit
+354,A - a,paper_count_aligned_best_fit
+355,A - a,paper_count_aligned_best_fit
+356,A - a,paper_count_aligned_best_fit
+357,A - a,paper_count_aligned_best_fit
+358,A - a,paper_count_aligned_best_fit
+359,A - a,paper_count_aligned_best_fit
+360,A - a,paper_count_aligned_best_fit
+361,A - a,paper_count_aligned_best_fit
+362,A - a,paper_count_aligned_best_fit
+363,A - a,paper_count_aligned_best_fit
+364,A - a,paper_count_aligned_best_fit
+365,A - a,paper_count_aligned_best_fit

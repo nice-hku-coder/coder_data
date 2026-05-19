@@ -1,0 +1,716 @@
+{
+  "benchmark_file": "/home/tangxb/CoDeR/../coder_data/end2end/med-02/query.jsonl",
+  "corpus_file": "/home/tangxb/CoDeR/../coder_data/end2end/med-02/corpus.jsonl",
+  "dataset_name": "query",
+  "run_metadata": {
+    "run_index": 1,
+    "total_runs": 1
+  },
+  "models": {
+    "BM25": "BM25",
+    "BGE": "/home/tangxb/CoDeR/models/BAAI_bge-large-en-v1.5",
+    "Contriever": "/home/tangxb/CoDeR/models/facebook_contriever"
+  },
+  "metric_definition": {
+    "violation_doc": "A document listed in constraint_violating_doc_ids; if absent, fallback to topical_relevant_doc_ids minus constraint_satisfying_doc_ids.",
+    "recall@5": "Recall on topical_relevant_doc_ids at top-5.",
+    "recall@10": "Recall on topical_relevant_doc_ids at top-10.",
+    "ndcg@5": "nDCG@5 computed from graded_relevance labels.",
+    "ndcg@10": "nDCG@10 computed from graded_relevance labels.",
+    "violation_at_k": "Probability that at least one violating document appears within top-k, averaged over queries.",
+    "first_violating_rank": "Rank position of the first violating document within top-10; 11 means none found.",
+    "build_time": "Wall-clock build time in seconds for model loading, document encoding, index construction, and cache initialization before online queries.",
+    "spend_time": "Wall-clock execution time in seconds for the online query stage over all queries in this report.",
+    "total_time": "Sum of build_time and spend_time in seconds.",
+    "api_cost": "Accumulated API cost in USD reported by the provider response when available; otherwise 0.0.",
+    "api_token": "Accumulated API tokens reported by the provider response when available; otherwise 0.",
+    "coder": "CoDeR combines encoder A and encoder B scores with alpha weighting and tau filtering, mirroring eval_retrieval_metrics.py."
+  },
+  "dual_config": {},
+  "target_categories": [
+    "antonym",
+    "negation",
+    "exclusion"
+  ],
+  "k_values": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "summary": {
+    "HyDE": {
+      "method": "HyDE",
+      "overall": {
+        "recall@5": 0.85,
+        "recall@10": 0.9,
+        "ndcg@5": 0.753530578737695,
+        "ndcg@10": 0.7723560626709063,
+        "v@1": 0.25,
+        "v@2": 0.9,
+        "v@3": 1.0,
+        "v@5": 1.0,
+        "v@10": 1.0,
+        "fvr_mean": 1.85,
+        "build_time": 1.661056183744222,
+        "spend_time": 771.4823245122097,
+        "total_time": 773.143380695954,
+        "api_cost": 0.3256599999999999,
+        "api_token": 37528
+      },
+      "first_violating_rank": {
+        "max_k": 10,
+        "no_violation_value": 11,
+        "mean": 1.85,
+        "median": 2.0,
+        "values": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "api_usage": {
+        "request_count": 160,
+        "prompt_tokens": 6616,
+        "completion_tokens": 30912,
+        "total_tokens": 37528,
+        "api_tokens": 37528,
+        "api_cost_usd": 0.3256599999999999
+      },
+      "by_category": {
+        "antonym": {
+          "v@5": 1.0,
+          "count": 5
+        },
+        "negation": {
+          "v@5": 1.0,
+          "count": 10
+        },
+        "exclusion": {
+          "v@5": 1.0,
+          "count": 5
+        }
+      },
+      "per_query": [
+        {
+          "query_id": "q001",
+          "query": "I need daytime anxiety medicine for work that eases worry without agitation, social discomfort, foggy thinking, or fast heartbeat.",
+          "category": "negation",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 1.0,
+          "ndcg@5": 0.2940806813328203,
+          "ndcg@10": 0.420778603571465,
+          "v@1": 1.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 1,
+          "top10_doc_ids": [
+            "d001",
+            "d023",
+            "d033",
+            "d008",
+            "d002",
+            "d034",
+            "d003",
+            "d016",
+            "d005",
+            "d007"
+          ],
+          "violating_doc_ids": [
+            "d001"
+          ]
+        },
+        {
+          "query_id": "q002",
+          "query": "I need allergy medicine that keeps me alert rather than sleepy and leaves my mouth comfortable rather than dry.",
+          "category": "antonym",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 0.9072278740982787,
+          "ndcg@10": 0.9072278740982787,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d005",
+            "d004",
+            "d023",
+            "d040",
+            "d006",
+            "d008",
+            "d047",
+            "d033",
+            "d016",
+            "d034"
+          ],
+          "violating_doc_ids": [
+            "d004"
+          ]
+        },
+        {
+          "query_id": "q003",
+          "query": "I need migraine relief for afternoon headaches without nausea, light sensitivity, fatigue, or fuzzy thinking.",
+          "category": "negation",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "ndcg@5": 0.7601875334318685,
+          "ndcg@10": 0.7601875334318685,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d008",
+            "d007",
+            "d034",
+            "d023",
+            "d032",
+            "d014",
+            "d036",
+            "d044",
+            "d005",
+            "d001"
+          ],
+          "violating_doc_ids": [
+            "d007"
+          ]
+        },
+        {
+          "query_id": "q004",
+          "query": "I need a sleep medicine that gives restful sleep without morning grogginess, dizziness, confusion, or heavy sedation.",
+          "category": "negation",
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.6666666666666666,
+          "ndcg@5": 0.0,
+          "ndcg@10": 0.11441962494640397,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d004",
+            "d010",
+            "d036",
+            "d005",
+            "d034",
+            "d007",
+            "d008",
+            "d001",
+            "d012",
+            "d033"
+          ],
+          "violating_doc_ids": [
+            "d010"
+          ]
+        },
+        {
+          "query_id": "q005",
+          "query": "I need reflux medicine that relieves burning after meals without bloating, constipation, cramps, or chest tightness.",
+          "category": "negation",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 1.0,
+          "ndcg@5": 0.7601875334318685,
+          "ndcg@10": 0.8955796649110442,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d014",
+            "d013",
+            "d032",
+            "d031",
+            "d023",
+            "d015",
+            "d026",
+            "d020",
+            "d022",
+            "d008"
+          ],
+          "violating_doc_ids": [
+            "d013"
+          ]
+        },
+        {
+          "query_id": "q006",
+          "query": "I need focus medicine for studying that improves attention without jitteriness, panic, appetite loss, or insomnia.",
+          "category": "negation",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "ndcg@5": 0.7601875334318685,
+          "ndcg@10": 0.7601875334318685,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d017",
+            "d016",
+            "d034",
+            "d008",
+            "d046",
+            "d001",
+            "d023",
+            "d043",
+            "d036",
+            "d005"
+          ],
+          "violating_doc_ids": [
+            "d016"
+          ]
+        },
+        {
+          "query_id": "q007",
+          "query": "I need back pain medicine that feels gentle rather than harsh on my stomach and steady rather than dizzy.",
+          "category": "antonym",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "ndcg@5": 0.7601875334318685,
+          "ndcg@10": 0.7601875334318685,
+          "v@1": 0.0,
+          "v@2": 0.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 3,
+          "top10_doc_ids": [
+            "d020",
+            "d032",
+            "d019",
+            "d008",
+            "d046",
+            "d014",
+            "d007",
+            "d031",
+            "d013",
+            "d035"
+          ],
+          "violating_doc_ids": [
+            "d019"
+          ]
+        },
+        {
+          "query_id": "q008",
+          "query": "I need an asthma inhaler that opens breathing without tremor, racing pulse, shakiness, or chest pounding.",
+          "category": "negation",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "ndcg@5": 0.7601875334318685,
+          "ndcg@10": 0.7601875334318685,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d023",
+            "d022",
+            "d005",
+            "d014",
+            "d034",
+            "d004",
+            "d008",
+            "d040",
+            "d001",
+            "d006"
+          ],
+          "violating_doc_ids": [
+            "d022"
+          ]
+        },
+        {
+          "query_id": "q009",
+          "query": "I need acne treatment that clears breakouts without dryness, peeling, stinging, or red irritation.",
+          "category": "negation",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 0.626665273802673,
+          "ndcg@10": 0.626665273802673,
+          "v@1": 1.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 1,
+          "top10_doc_ids": [
+            "d025",
+            "d026",
+            "d048",
+            "d047",
+            "d027",
+            "d014",
+            "d005",
+            "d006",
+            "d032",
+            "d036"
+          ],
+          "violating_doc_ids": [
+            "d025"
+          ]
+        },
+        {
+          "query_id": "q010",
+          "query": "I need motion sickness medicine that keeps me alert rather than sleepy and clear-sighted rather than blurred.",
+          "category": "antonym",
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "ndcg@5": 0.38009376671593426,
+          "ndcg@10": 0.38009376671593426,
+          "v@1": 1.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 1,
+          "top10_doc_ids": [
+            "d028",
+            "d046",
+            "d029",
+            "d004",
+            "d005",
+            "d008",
+            "d034",
+            "d007",
+            "d010",
+            "d036"
+          ],
+          "violating_doc_ids": [
+            "d028"
+          ]
+        },
+        {
+          "query_id": "q011",
+          "query": "I need medicine for IBS cramps that relaxes my gut without constipation, bloating, nausea, or heaviness.",
+          "category": "negation",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d032",
+            "d031",
+            "d013",
+            "d014",
+            "d034",
+            "d026",
+            "d048",
+            "d020",
+            "d008",
+            "d047"
+          ],
+          "violating_doc_ids": [
+            "d031"
+          ]
+        },
+        {
+          "query_id": "q012",
+          "query": "I need muscle spasm medicine that relaxes my neck without weakness, heavy sedation, clumsiness, or daytime fog.",
+          "category": "negation",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d034",
+            "d033",
+            "d010",
+            "d001",
+            "d005",
+            "d004",
+            "d007",
+            "d013",
+            "d022",
+            "d032"
+          ],
+          "violating_doc_ids": [
+            "d033"
+          ]
+        },
+        {
+          "query_id": "q013",
+          "query": "I need mood medicine that feels energizing rather than numbing and keeps sleep steady rather than restless.",
+          "category": "antonym",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d036",
+            "d035",
+            "d034",
+            "d007",
+            "d017",
+            "d008",
+            "d001",
+            "d046",
+            "d043",
+            "d023"
+          ],
+          "violating_doc_ids": [
+            "d035"
+          ]
+        },
+        {
+          "query_id": "q014",
+          "query": "I need blood pressure medicine excluding cough and swollen ankles that keeps my pressure steady.",
+          "category": "exclusion",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 0.43067655807339306,
+          "ndcg@10": 0.43067655807339306,
+          "v@1": 1.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 1,
+          "top10_doc_ids": [
+            "d037",
+            "d042",
+            "d023",
+            "d038",
+            "d001",
+            "d014",
+            "d013",
+            "d040",
+            "d036",
+            "d004"
+          ],
+          "violating_doc_ids": [
+            "d037"
+          ]
+        },
+        {
+          "query_id": "q015",
+          "query": "I need nighttime cough medicine excluding alcohol and codeine that calms coughing before sleep.",
+          "category": "exclusion",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d040",
+            "d039",
+            "d037",
+            "d004",
+            "d023",
+            "d014",
+            "d005",
+            "d043",
+            "d044",
+            "d042"
+          ],
+          "violating_doc_ids": [
+            "d039"
+          ]
+        },
+        {
+          "query_id": "q016",
+          "query": "I need UTI medicine excluding penicillin and sulfa that eases burning urination quickly.",
+          "category": "exclusion",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d042",
+            "d041",
+            "d013",
+            "d039",
+            "d014",
+            "d040",
+            "d047",
+            "d031",
+            "d037",
+            "d034"
+          ],
+          "violating_doc_ids": [
+            "d041"
+          ]
+        },
+        {
+          "query_id": "q017",
+          "query": "I need cold medicine without pseudoephedrine or caffeine that clears congestion during the day.",
+          "category": "exclusion",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d044",
+            "d043",
+            "d040",
+            "d004",
+            "d023",
+            "d005",
+            "d008",
+            "d014",
+            "d006",
+            "d007"
+          ],
+          "violating_doc_ids": [
+            "d043"
+          ]
+        },
+        {
+          "query_id": "q018",
+          "query": "I need nausea medicine that keeps my mind clear rather than confused and my body alert rather than sedated.",
+          "category": "antonym",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 0.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 3,
+          "top10_doc_ids": [
+            "d046",
+            "d008",
+            "d045",
+            "d034",
+            "d017",
+            "d007",
+            "d004",
+            "d033",
+            "d036",
+            "d005"
+          ],
+          "violating_doc_ids": [
+            "d045"
+          ]
+        },
+        {
+          "query_id": "q019",
+          "query": "I need eczema cream that soothes itching without burning, thinning skin, cracking, or redness.",
+          "category": "negation",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 1.0,
+          "ndcg@10": 1.0,
+          "v@1": 0.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 2,
+          "top10_doc_ids": [
+            "d048",
+            "d047",
+            "d026",
+            "d025",
+            "d032",
+            "d013",
+            "d023",
+            "d014",
+            "d006",
+            "d005"
+          ],
+          "violating_doc_ids": [
+            "d047"
+          ]
+        },
+        {
+          "query_id": "q020",
+          "query": "I need smoking cessation medicine excluding nightmares and nausea that reduces cravings at work.",
+          "category": "exclusion",
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "ndcg@5": 0.6309297535714575,
+          "ndcg@10": 0.6309297535714575,
+          "v@1": 1.0,
+          "v@2": 1.0,
+          "v@3": 1.0,
+          "v@5": 1.0,
+          "v@10": 1.0,
+          "first_violating_rank": 1,
+          "top10_doc_ids": [
+            "d049",
+            "d050",
+            "d001",
+            "d005",
+            "d023",
+            "d014",
+            "d016",
+            "d003",
+            "d004",
+            "d043"
+          ],
+          "violating_doc_ids": [
+            "d049"
+          ]
+        }
+      ]
+    }
+  }
+}
